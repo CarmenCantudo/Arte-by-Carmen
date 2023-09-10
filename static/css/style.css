@@ -1,0 +1,23 @@
+body {
+  font-family: "Shantell Sans", cursive;
+  color: #130057 !important;
+}
+
+h1 {
+  font-family: "Allura", cursive;
+  font-weight: 600;
+}
+
+.nav-item {
+  font-family: "Amatic SC", cursive;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.nav-item a {
+  color: #130057;
+}
+
+.w-logo {
+  width: 150px;
+}
