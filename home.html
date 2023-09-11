@@ -1,41 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
     <!-- Style -->
-    <link rel="stylesheet" href="static/css/style.css">
-    
+    <link rel="stylesheet" href="static/css/style.css" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?Shantell+Sans&family=Allura&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?Shantell+Sans&family=Allura&family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Arte by Carmen</title>
   </head>
   <body>
-  <div class="container">
-    <header class="d-flex flex-wrap justify-content-center align-items-center py-3 mb-4">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4"><img class="w-logo" src="static/images/logo.png" alt="logo"></span>
-      </a>
+    <!-- Navbar -->
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center align-items-center py-3 mb-4"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <span class="fs-4"
+            ><img class="w-logo" src="static/images/logo.png" alt="logo"
+          /></span>
+        </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Minimalist Illustrations</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Personalised Illustrations</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
-    </header>
-  </div>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Minimalist Illustrations</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Personalised Illustrations</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </header>
+    </div>
+    <!-- Hero -->
+    <div class="mb-5 text-center bg-orange rounded" id="hero-outer">
+      <div id="hero-image"></div>
+      <h1 class="display-5 fw-bold">Arte by Carmen</h1>
+      <div class="col-lg-6 mx-auto" id="cover-text">
+        <p class="lead mb-4 p-4">
+          Minimalist Personalised Illustrations for Life's Special Moments.
+          <br />From weddings to baby showers, our unique illustrations make for
+          the perfect gift or keepsake.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-darkorange btn-lg p-4 gap-3">
+            Primary button
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+            Secondary
+          </button>
+        </div>
+      </div>
+    </div>
 
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Cards -->
+    <h1 class="text-center p-5">Personalised Illustrations</h1>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card text-center h-100">
+            <img
+              src="static/images/minimalist-illustration.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title pb-2">Sleek Digital Portraits</h5>
+              <p class="card-text">
+                Elevate your essence with our sleek digital portraits, capturing
+                your unique charm in a minimalist style.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://www.etsy.com/ie/listing/984883189/digital-minimalist-portrait-personalised"
+                target="_blank"
+                class="btn btn-darkorange"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card text-center h-100">
+            <img
+              src="static/images/wedding illustration.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title pb-2">Timeless Digital Wedding Portraits</h5>
+              <p class="card-text">
+                Cherish your special day forever with our timeless digital
+                wedding portraits, a perfect blend of love and artistry.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://www.etsy.com/ie/listing/970978388/digital-wedding-portrait-anniversary"
+                target="_blank"
+                class="btn btn-darkorange"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card text-center h-100">
+            <img
+              src="static/images/animal-illustration-sq.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title pb-2">Whimsical Digital Animal Art</h5>
+              <p class="card-text">
+                Turn your furry, feathered, or scaly friends into whimsical
+                works of art with our digital animal portraits.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://www.etsy.com/ie/listing/990759056/digital-animal-portrait-with-detailed"
+                target="_blank"
+                class="btn btn-darkorange"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card text-center h-100">
+            <img
+              src="static/images/detailed-back-illustration-sq.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title pb-2">
+                Digital Minimalist Portraits: Enchanting Backgrounds
+              </h5>
+              <p class="card-text">
+                Experience the magic of our digital minimalist portraits, now
+                with enchanting, detailed backgrounds for added depth and
+                character.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://www.etsy.com/ie/listing/977891486/digital-minimalist-portrait-with"
+                target="_blank"
+                class="btn btn-darkorange"
+                >Buy</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
