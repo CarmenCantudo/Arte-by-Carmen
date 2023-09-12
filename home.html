@@ -23,6 +23,12 @@
       rel="stylesheet"
     />
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <!-- Pinterest -->
     <meta name="p:domain_verify" content="91dfbf1a211d81577376f3f9a17b7356" />
 
@@ -250,24 +256,36 @@
 
     <!-- Pinterest Tag -->
     <script>
-        !function(e){if(!window.pintrk){window.pintrk = function () {
-        window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
-        n=window.pintrk;n.queue=[],n.version="3.0";var
-        t=document.createElement("script");t.async=!0,t.src=e;var
-        r=document.getElementsByTagName("script")[0];
-        r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-        pintrk('load', '2612846706329', {em: '<user_email_address>'});
-        pintrk('page');
+      !(function (e) {
+        if (!window.pintrk) {
+          window.pintrk = function () {
+            window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+          };
+          var n = window.pintrk;
+          (n.queue = []), (n.version = "3.0");
+          var t = document.createElement("script");
+          (t.async = !0), (t.src = e);
+          var r = document.getElementsByTagName("script")[0];
+          r.parentNode.insertBefore(t, r);
+        }
+      })("https://s.pinimg.com/ct/core.js");
+      pintrk("load", "2612846706329", { em: "<user_email_address>" });
+      pintrk("page");
     </script>
     <noscript>
-    <img height="1" width="1" style="display:none;" alt=""
-      src="https://ct.pinterest.com/v3/?event=init&tid=2612846706329&pd[em]=<hashed_email_address>&noscript=1" />
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        alt=""
+        src="https://ct.pinterest.com/v3/?event=init&tid=2612846706329&pd[em]=<hashed_email_address>&noscript=1"
+      />
     </noscript>
     <!-- Page visits -->
     <script>
-        pintrk('track', 'pagevisit', {
-        event_id: 'eventId0001'
-        });
+      pintrk("track", "pagevisit", {
+        event_id: "eventId0001",
+      });
     </script>
     <!-- end Pinterest Tag -->
   </body>
