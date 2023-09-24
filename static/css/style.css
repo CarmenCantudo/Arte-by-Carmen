@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Sans:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;1,500&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Sans:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;1,500&family=Special+Elite&Poppins:wght@200;300&family=Satisfy&display=swap');
 
 body {
     font-family: 'Noto Sans', sans-serif;
@@ -12,6 +12,25 @@ h1 {
   color: #130057 !important;
 }
 
+h2 {
+    font-size: 24px;
+    font-family: 'Satisfy', cursive;
+}
+
+.signature {
+  font-family: "Allura", cursive;
+  font-size: 60px;
+}
+
+
+/**********/
+/* Navbar */
+/**********/
+
+.navbar, .dropdown-menu {
+    background-color: #FFF4EB !important;
+}
+
 .nav-item {
   font-family: "Amatic SC", cursive;
   font-weight: 600;
@@ -22,14 +41,19 @@ h1 {
   color: #130057;
 }
 
+.dropdown-menu {
+    font-family: 'Amiri', sans-serif;
+}
+
 .w-logo {
   width: 150px;
 }
 
 .bg-orange {
     background-color: #FFF7F6;
-    /* background: url('../images/collage-cover.png') ; */
 }
+
+/* Bottons */
 
 .btn-darkorange {
     background-color: #FCB49B;
@@ -111,8 +135,36 @@ h1 {
     border: none;
 }
 
-.card-footer {
-    background-color: #fff;
-    border: none;
+.card-link {
+    text-decoration: none;
+}
 
+.card-link:hover img {
+    /* Animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.card-link:hover .card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+/**********/
+/* Footer */
+/**********/
+.footer {
+    background-color: #FFF4EB;
+}
+
+hr {
+    color: #FCB49B;
+}
+
+.social {
+    color: #FCB49B;
 }
