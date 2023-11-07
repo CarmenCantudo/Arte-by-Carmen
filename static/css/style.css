@@ -202,3 +202,8 @@ hr {
   font-weight: 600;
 }
 
+@media screen and (max-width: 990px) {
+    .title {
+        margin-top: 60px;
+    }
+}
