@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Sans:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;1,500&family=Special+Elite&Poppins:wght@200;300&family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Sans:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;1,500&family=Special+Elite&Poppins:wght@200;300&family=Satisfy&display=swap");
 
 body {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    color: #3a3a3a;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  color: #3a3a3a;
 }
 
 h1 {
@@ -13,8 +13,8 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
-    font-family: 'Satisfy', cursive;
+  font-size: 24px;
+  font-family: "Satisfy", cursive;
 }
 
 .signature {
@@ -22,13 +22,13 @@ h2 {
   font-size: 60px;
 }
 
-
 /**********/
 /* Navbar */
 /**********/
 
-.navbar, .dropdown-menu {
-    background-color: #FFF4EB !important;
+.navbar,
+.dropdown-menu {
+  background-color: #fff4eb !important;
 }
 
 .nav-item {
@@ -42,7 +42,7 @@ h2 {
 }
 
 .dropdown-menu {
-    font-family: 'Amiri', sans-serif;
+  font-family: "Amiri", sans-serif;
 }
 
 .w-logo {
@@ -50,144 +50,155 @@ h2 {
 }
 
 .bg-orange {
-    background-color: #FFF7F6;
+  background-color: #fff7f6 !important;
 }
 .bg-beige {
-    background-color: #FFF4EB;
+  background-color: #fff4eb;
+}
+
+/* Pills */
+
+.pill-orange li a.active {
+  background-color: #fcb49b !important;
 }
 
 /* Bottons */
 
 .btn-darkorange {
-    background-color: #FCB49B;
-    color: #fff;
+  background-color: #fcb49b;
+  color: #fff;
 }
 
 .btn-darkorange:hover {
-    border-color: #FCB49B;
-    color: #FCB49B;
+  border-color: #fcb49b;
+  color: #fcb49b;
 }
 
 /* Hero image */
 
 #hero-outer {
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
 
-    /* Change position to relative and cover-text to absolute to get it fixed in the section. */
-    position: relative;
+  /* Change position to relative and cover-text to absolute to get it fixed in the section. */
+  position: relative;
 }
 
-#hero-image, #hero-image-books, #hero-image-meetups, #hero-image-contact {
-    height: 100%;
-    width: 100%;
-    background-color: #FEEEDF;
-    
-    /* Animates zoom effect on loading page */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+#hero-image,
+#hero-image-books,
+#hero-image-meetups,
+#hero-image-contact {
+  height: 100%;
+  width: 100%;
+  background-color: #feeedf;
+
+  /* Animates zoom effect on loading page */
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
 
 /* Creates the level of zoom for hero image */
 
 @keyframes hero-zoom {
-    from {
-        transform: scale(1.1);
-    }
-    to {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 #hero-image {
-    background: url('../images/collage-cover.png') no-repeat center center;
-    background-size: cover;
+  background: url("../images/collage-cover.png") no-repeat center center;
+  background-size: cover;
 }
 
 /* Text over hero image */
 
-#cover-text, #cover-text h2 {
-    color: #000000;
+#cover-text,
+#cover-text h2 {
+  color: #000000;
 }
 
 #cover-text {
-    font-size: 130%;
-    font-family: Playfair Display, sans-serif;
-    letter-spacing: 2px;
-    text-align: center;
+  font-size: 130%;
+  font-family: Playfair Display, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    background-color: rgb(254,238,223, .7);
-    bottom: 0px;
+  background-color: rgb(254, 238, 223, 0.7);
+  bottom: 0px;
 
-    position: absolute;
-    justify-content: center;
+  position: absolute;
+  justify-content: center;
 }
 
 #cover-text h2 {
-    margin: 20px;
-    align-self: center;
+  margin: 20px;
+  align-self: center;
 }
 
 /* Cards */
 .card {
-    border: none;
+  border: none;
 }
 
 .card-link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .card-link:hover img {
-    /* Animates zoom effect on loading page */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+  /* Animates zoom effect on loading page */
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
 }
 
 .card-link:hover .card-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .card-text {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 /**********/
 /* Footer */
 /**********/
 .footer {
-    background-color: #FFF4EB;
+  background-color: #fff4eb;
 }
 
 hr {
-    color: #FCB49B;
+  color: #fcb49b;
 }
 
 .social {
-    color: #FCB49B;
+  color: #fcb49b;
 }
 
 .links {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .links:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .policy {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .h4-policy {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
+
