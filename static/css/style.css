@@ -76,8 +76,7 @@ h2 {
 
 /* Hero image */
 
-#hero-outer {
-  height: 500px;
+#hero-outer, #hero-outer2, #hero-outer3 {
   width: 100%;
   overflow: hidden;
 
@@ -85,10 +84,19 @@ h2 {
   position: relative;
 }
 
-#hero-image,
-#hero-image-books,
-#hero-image-meetups,
-#hero-image-contact {
+#hero-outer {
+    height: 500px;
+}
+
+#hero-outer2 {
+    height: 150px;
+}
+
+#hero-outer3 {
+    height: 100px;
+}
+
+#hero-image {
   height: 100%;
   width: 100%;
   background-color: #feeedf;
