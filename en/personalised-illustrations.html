@@ -56,69 +56,96 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="container">
-      <header
-        class="d-flex flex-wrap justify-content-center align-items-center py-3 mb-4"
-      >
-        <a
-          href="../home.html"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <span class="fs-4"
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="/"
             ><img class="w-logo" src="../static/images/logo.png" alt="logo"
-          /></span>
-        </a>
-
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="../home.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Illustrations
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="personalised-illustrations.html"
-                  >Personalised Illustrations</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="digital-maps.html"
-                  >Digital Maps</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="name-prints.html">Name Prints</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="minimal-prints.html"
-                  >Minimalist Prints</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="knited-names.html" class="nav-link">Knited Names</a>
-          </li>
-          <li class="nav-item">
-            <a href="faqs.html" class="nav-link">FAQs</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-        </ul>
-      </header>
-    </div>
+          /></a>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Illustrations
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="personalised-illustrations.html"
+                    >Personalised Illustrations</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="digital-maps.html"
+                    >Digital Maps</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="name-prints.html"
+                    >Name Prints</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="minimal-prints.html"
+                    >Minimalist Prints</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Knit & Wire
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="knited-names.html" class="dropdown-item"
+                    >Wire-Knitted Name Art</a
+                  >
+                </li>
+                <li>
+                  <a href="knited-figures.html" class="dropdown-item"
+                    >Wire-Knitted Figures</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="faqs.html" class="nav-link">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
     <!-- Hero -->
     <div class="mb-5 text-center bg-orange rounded" id="hero-outer2">
       <div id="hero-image"></div>
