@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="static/css/style.css" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +23,12 @@
       href="https://fonts.googleapis.com/css2?Shantell+Sans&family=Allura&family=Amatic+SC:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/8e0b0718bf.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Favicon -->
     <link
@@ -58,46 +69,8 @@
     <!-- End Google Tag Manager -->
 
     <title>Arte by Carmen</title>
-    <style>
-      body {
-        font-family: "Shantell Sans", cursive;
-        color: #130057 !important;
-      }
-      h1 {
-        font-family: "Allura", cursive;
-        font-weight: 600;
-      }
-      h2 {
-        font-family: "Amatic SC", cursive;
-        font-weight: 600;
-      }
-      .logo {
-        width: 20%;
-      }
-      p {
-        font-size: larger;
-      }
-      a {
-        color: #130057;
-      }
-      a:hover {
-        color: #142d85;
-      }
-
-      .index-social {
-        display: flex;
-      }
-      i {
-        font-size: 30px;
-      }
-      @media (max-width: 431px) {
-        .logo {
-          width: 50%;
-        }
-      }
-    </style>
   </head>
-  <body class="pt-5">
+  <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -108,125 +81,574 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <section
-      class="d-flex flex-column content justify-content-center align-items-center my-2"
-    >
-      <img
-        class="logo"
-        src="static\images\logo.png"
-        alt="Arte by Carmen Logo"
-      />
-      <h1 class="text-center m-2">
-        <bold>Welcome to Arte by Carmen</bold>
-      </h1>
-      <h2 class="text-center mb-5">designs · illustrations</h2>
-      <p class="text-center m-2">Our page is under construction!</p>
-      <p class="text-center m-2">
-        We're hard at work to bring you something amazing!
-      </p>
-      <p class="text-center m-2">
-        Our website is currently undergoing a transformation to enhance your
-        experience and offer you even more creative and personalized art. We
-        can't wait to share our exciting updates with you.
-      </p>
-      <p class="text-center m-2">
-        During this time, you can still connect with us and stay updated on our
-        latest creations and offerings through our social media channels. Follow
-        us on Instagram
-        <a
-          href="https://www.instagram.com/artebycarmen/"
-          target="_blank"
-          rel="noopener"
-          aria-label="Visit our Instagram page (opens in a new tab)"
-          >@ArtebyCarmen</a
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        for a glimpse into our artistic journey.
-      </p>
-      <p class="text-center m-2">
-        If you have any urgent inquiries or require assistance, please don't
-        hesitate to reach out to us via email at
-        <a href="mailto:artebycarmen@gmail.com">artebycarmen@gmail.com</a>. Our
-        dedicated team is here to help you with any questions or special
-        requests you may have.
-      </p>
-      <p class="text-center m-2">
-        Thank you for your patience and understanding as we work to make your
-        experience with Arte by Carmen even more exceptional.
-      </p>
-      <p class="text-center m-2">
-        We'll be back with a brand new look and exciting offerings soon. Stay
-        tuned!
-      </p>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="/"
+            ><img class="w-logo" src="static/images/logo.png" alt="logo"
+          /></a>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Illustrations
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="en/personalised-illustrations.html"
+                    >Personalised Illustrations</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="en/digital-maps.html"
+                    >Digital Maps</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="en/name-prints.html"
+                    >Name Prints</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="en/minimal-prints.html"
+                    >Minimalist Prints</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Knit & Wire
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="en/knited-names.html" class="dropdown-item"
+                    >Wire-Knitted Name Art</a
+                  >
+                </li>
+                <li>
+                  <a href="en/knited-figures.html" class="dropdown-item"
+                    >Wire-Knitted Figures</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="en/faqs.html" class="nav-link">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="en/about.html" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <br />
-      <br />
-      <p class="text-center">Follow us!!</p>
-      <div class="index-social">
-        <a
-          class="nav-link"
-          href="https://www.instagram.com/artebycarmen/"
-          target="_blank"
-          rel="noopener"
-          aria-label="Visit our Instagram page (opens in a new tab)"
-        >
-          <i class="fa-brands fa-instagram social"></i>
-        </a>
-        <a
-          class="nav-link"
-          target="_blank"
-          href="https://www.facebook.com/artebycarmen/"
-          rel="noopener"
-          aria-label="Visit our Facebook page (opens in a new tab)"
-          ><i class="fa-brands fa-facebook-f social"></i>
-        </a>
-        <a
-          class="nav-link"
-          target="_blank"
-          href="https://www.tiktok.com/@artebycarmen"
-          rel="noopener"
-          aria-label="Visit our TikTok page (opens in a new tab)"
-          ><i class="fa-brands fa-tiktok social"></i>
-        </a>
-        <a
-          class="nav-link"
-          target="_blank"
-          href="https://www.pinterest.ie/artebycarmen/"
-          rel="noopener"
-          aria-label="Visit our Pinterest page (opens in a new tab)"
-        >
-          <i class="fa-brands fa-pinterest-p social"></i>
-        </a>
-        <a
-          class="nav-link"
-          target="_blank"
-          href="https://www.etsy.com/ie/shop/ArtebyCarmenShop"
-          rel="noopener"
-          aria-label="Visit our Etsy page (opens in a new tab)"
-        >
-          <i class="fa-brands fa-etsy social"></i>
+    <!-- Hero -->
+    <div class="mb-5 text-center bg-orange rounded" id="hero-outer">
+      <div id="hero-image"></div>
+      <h1 class="display-5 fw-bold">Arte by Carmen</h1>
+      <div class="col-lg-6 mx-auto" id="cover-text">
+        <p class="lead p-5 pb-4">
+          Minimalist Personalised Illustrations for Life's Special Moments.
+          <br />From weddings to baby showers, our one-of-a-kind digital
+          illustrations are the ideal choice for a unique gift or cherished
+          keepsake.
+        </p>
+      </div>
+    </div>
+
+    <!-- Personalised Illustrations Cards -->
+    <div class="container">
+      <h1 class="text-center p-5">Personalised Illustrations</h1>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
+        <!-- Card 1 -->
+        <div class="col">
+          <a
+            class="card-link"
+            href="en/personalised-illustrations/sleek-digital-portrait.html"
+          >
+            <div class="card text-center">
+              <img
+                src="static/images/minimalist-illustration.png"
+                class="card-img-top"
+                alt="Sleek Digital Portraits"
+              />
+              <div class="card-body">
+                <h5 class="card-title pb-2">Sleek Digital Portraits</h5>
+                <p class="card-text">
+                  Elevate your essence with our sleek digital portraits,
+                  capturing your unique charm in a minimalist style.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <a
+            class="card-link"
+            href="en/personalised-illustrations/wedding-illustration.html"
+          >
+            <div class="card text-center">
+              <img
+                src="static/images/wedding illustration.jpg"
+                class="card-img-top"
+                alt="Timeless Digital Wedding Portraits"
+              />
+              <div class="card-body">
+                <h5 class="card-title pb-2">
+                  Timeless Digital Wedding Portraits
+                </h5>
+                <p class="card-text">
+                  Cherish your special day forever with our timeless digital
+                  wedding portraits, a perfect blend of love and artistry.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <a
+            class="card-link"
+            href="en/personalised-illustrations/animal-illustration.html"
+          >
+            <div class="card text-center">
+              <img
+                src="static/images/animal-illustration-sq.jpg"
+                class="card-img-top"
+                alt="Whimsical Digital Animal Art"
+              />
+              <div class="card-body">
+                <h5 class="card-title pb-2">Whimsical Digital Animal Art</h5>
+                <p class="card-text">
+                  Turn your furry, feathered, or scaly friends into whimsical
+                  works of art with our digital animal portraits.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+          <a
+            class="card-link"
+            href="en/personalised-illustrations/detailed-back-illustration.html"
+          >
+            <div class="card text-center">
+              <img
+                src="static/images/detailed-back-illustration-sq.jpg"
+                class="card-img-top"
+                alt="Digital Minimalist Portraits: Enchanting Backgrounds"
+              />
+              <div class="card-body">
+                <h5 class="card-title pb-2">
+                  Digital Minimalist Portraits: Enchanting Backgrounds
+                </h5>
+                <p class="card-text">
+                  Experience the magic of our digital minimalist portraits, now
+                  with enchanting, detailed backgrounds for added depth and
+                  character.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personalised Map Cards -->
+    <div class="container">
+      <h1 class="text-center p-5">Digital Maps</h1>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
+        <!-- Card 1 -->
+        <div class="col"></div>
+        <div class="col">
+          <a class="card-link" href="en/maps/street-map.html">
+            <div class="card text-center">
+              <img
+                src="static/images/street-map.jpg"
+                class="card-img-top"
+                alt="Personalised Digital Maps"
+              />
+              <div class="card-body">
+                <h5 class="card-title pb-2">Personalised Digital Maps</h5>
+                <p class="card-text">
+                  Capture Precious Memories with Personalised Digital Maps |
+                  Perfect for Anniversaries, Weddings, and More!
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <a class="card-link" href="#en/maps/star-map.html">
+            <div class="card text-center">
+              <img
+                src="static/images/coming-soon.jpg"
+                class="card-img-top"
+                alt="Digital Custom Star Map"
+              />
+              <div class="card-body">
+                <h5 class="card-title pb-2">Digital Custom Star Map</h5>
+                <p class="card-text">
+                  Celebrate Your Unique Moments with a Digital Custom Star Map
+                  by Date | Perfect for Engagement, Where We Met Gift, First
+                  Date, and More!
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Name Prints Cards -->
+    <div class="container">
+      <h1 class="text-center p-5">Name Prints</h1>
+      <!-- Name Prints card -->
+      <div class="card mb-3">
+        <a class="card-link" href="en/name-prints.html">
+          <div class="row g-0">
+            <div class="col-md-3 px-2">
+              <img
+                src="static/images/name-print.jpg"
+                class="img-fluid rounded-start"
+                alt="Frame with a Name Print"
+              />
+            </div>
+            <div class="col-md-9 px-2">
+              <div class="card-body">
+                <h5 class="card-title">Personalised Name Origin Poster</h5>
+                <p class="card-text fst-italic">
+                  Adorable Nursery Decor with Baby Animals, Ideal Baby Shower
+                  Gift, Unique Newborn Gift
+                </p>
+                <p class="card-text">
+                  Transform your loved ones' names into beautiful art pieces
+                  with our Personalised Name Prints. Crafted with attention to
+                  detail, these custom prints are a wonderful way to celebrate
+                  the individuals who hold a special place in your heart.
+                  Whether it's a child's name, a beloved pet, or a meaningful
+                  word, our prints are a unique and heartfelt addition to any
+                  space.
+                </p>
+              </div>
+            </div>
+          </div>
         </a>
       </div>
-      <br />
-      <small class="my-2 text-center w-100"
-        >Arte by Carmen &copy; <span id="copyright"></span
-      ></small>
-    </section>
-    <!-- Bootstrap js -->
+    </div>
+
+    <!-- Personalised Knited Names -->
+    <div class="container py-5">
+      <h1 class="text-center p-5">Knit & Wire</h1>
+      <!-- Knit & Wire card -->
+      <div class="card mb-3">
+        <a class="card-link" href="en/knit-wire.html">
+          <div class="row g-0">
+            <div class="col-md-9 px-2">
+              <div class="card-body">
+                <h5 class="card-title">Personalised Knit & Wire Name Frames</h5>
+                <p class="card-text fst-italic">
+                  Wire-Knitted Personalised Art | Unique Handcrafted Wire Art
+                  for Home Decor and Gifting
+                </p>
+                <p class="card-text">
+                  Crafted with love and wire, our Wire-Knitted Name Art and
+                  Figures bring a personalised touch to any space. Hand-knitted
+                  to perfection, these unique creations are ideal for gifting or
+                  adding creative flair to your decor. Celebrate cherished
+                  moments with our customisable wire-knitted artistry, perfect
+                  for home decoration and heartfelt gifts. Explore the
+                  possibilities today!
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 px-2">
+              <img
+                src="static/images/wired-knit-raya-sq.jpg"
+                class="img-fluid rounded-start"
+                alt="Wire Knitted Name and Dog"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Products</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item-footer mb-2">
+                  <a href="en/personalised-illustrations.html" class="nav-link p-0 text-body-secondary"
+                    >Illustrations</a
+                  >
+                </li>
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="en/knit-wire.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >Knit & Wire</a
+                  >
+                </li>
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="en/faqs.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >FAQs</a
+                  >
+                </li>
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="en/about.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Contact Us</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="contact-us.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >Contact Form</a
+                  >
+                </li>
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="mailto:artebycarmen@gmail.com"
+                    class="nav-link p-0 text-body-secondary"
+                    target="_blank"
+                    >Email</a
+                  >
+                </li>
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="https://wa.link/dozmzo"
+                    class="nav-link p-0 text-body-secondary"
+                    target="_blank"
+                    >WhatsApp</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Info</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="delivery-returns.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >Delivery & Returns</a
+                  >
+                </li>
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="privacy-policy.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >Privacy Policy
+                  </a>
+                </li>
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="terms-conditions.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li class="nav-item-footer mb-2">
+                  <a
+                    href="legal-notice.html"
+                    class="nav-link p-0 text-body-secondary"
+                    >Legal Notice</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Email address</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button class="btn btn-darkorange" type="button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <hr />
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4"
+          >
+            <p>
+              <small
+                >Arte by Carmen &copy; <span id="copyright"></span>. All rights
+                reserved</small
+              >
+            </p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a
+                  class="link-body-emphasis"
+                  target="_blank"
+                  href="https://www.instagram.com/artebycarmen/"
+                  rel="noopener"
+                  aria-label="Visit our Instagram page (opens in a new tab)"
+                  ><i class="fa-brands fa-instagram social"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="link-body-emphasis"
+                  target="_blank"
+                  href="https://ms-my.facebook.com/artebycarmen/"
+                  rel="noopener"
+                  aria-label="Visit our Facebook page (opens in a new tab)"
+                  ><i class="fa-brands fa-facebook-f social"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="link-body-emphasis"
+                  target="_blank"
+                  href="https://www.tiktok.com/@artebycarmen"
+                  rel="noopener"
+                  aria-label="Visit our TikTok page (opens in a new tab)"
+                  ><i class="fa-brands fa-tiktok social"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="link-body-emphasis"
+                  target="_blank"
+                  href="https://www.pinterest.ie/artebycarmen/"
+                  rel="noopener"
+                  aria-label="Visit our Pinterest page (opens in a new tab)"
+                >
+                  <i class="fa-brands fa-pinterest-p social"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="link-body-emphasis"
+                  target="_blank"
+                  href="https://www.etsy.com/ie/shop/ArtebyCarmenShop"
+                  rel="noopener"
+                  aria-label="Visit our Etsy page (opens in a new tab)"
+                >
+                  <i class="fa-brands fa-etsy social"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/8e0b0718bf.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- Pinterest Tag -->
+    <script>
+      !(function (e) {
+        if (!window.pintrk) {
+          window.pintrk = function () {
+            window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+          };
+          var n = window.pintrk;
+          (n.queue = []), (n.version = "3.0");
+          var t = document.createElement("script");
+          (t.async = !0), (t.src = e);
+          var r = document.getElementsByTagName("script")[0];
+          r.parentNode.insertBefore(t, r);
+        }
+      })("https://s.pinimg.com/ct/core.js");
+      pintrk("load", "2612846706329", { em: "<user_email_address>" });
+      pintrk("page");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        alt=""
+        src="https://ct.pinterest.com/v3/?event=init&tid=2612846706329&pd[em]=<hashed_email_address>&noscript=1"
+      />
+    </noscript>
+    <!-- Page visits -->
+    <script>
+      pintrk("track", "pagevisit", {
+        event_id: "eventId0001",
+      });
+    </script>
+    <!-- end Pinterest Tag -->
 
     <!-- Omnisend Newsletter -->
     <script type="text/javascript">
