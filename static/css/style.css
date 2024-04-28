@@ -76,7 +76,9 @@ h2 {
 
 /* Hero image */
 
-#hero-outer, #hero-outer2, #hero-outer3 {
+#hero-outer,
+#hero-outer2,
+#hero-outer3 {
   width: 100%;
   overflow: hidden;
 
@@ -85,15 +87,15 @@ h2 {
 }
 
 #hero-outer {
-    height: 500px;
+  height: 500px;
 }
 
 #hero-outer2 {
-    height: 150px;
+  height: 150px;
 }
 
 #hero-outer3 {
-    height: 100px;
+  height: 100px;
 }
 
 #hero-image {
@@ -176,6 +178,17 @@ h2 {
   font-size: 15px;
 }
 
+/********/
+/* Faqs */
+/********/
+.accordion-button:not(.collapsed) {
+  background-color: #fff4eb;
+}
+
+.accordion-button {
+  font-size: 20px !important;
+}
+
 /**********/
 /* Footer */
 /**********/
@@ -211,7 +224,7 @@ hr {
 }
 
 @media screen and (max-width: 990px) {
-    .title {
-        margin-top: 60px;
-    }
+  .title {
+    margin-top: 60px;
+  }
 }
